@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "TwitterChirp","Verdana",-apple-system, "Google Sans",BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;;
+}
+
+body{
+    background-color: #000;
+    color: #fff;
+}
+/* container */
+#main-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 300px;
+}
+#box-container{
+    margin-top: -350px;   
+}
+
+#banner-container{
+    flex: 1 1 0;
+    width: 50%;
+    text-align: right;
+}
+#banner-container img{
+    width: 100%;
+    margin-right: 250px;
+    margin-top: 25px;
+    max-width: 300px;
+}
+
+#login-container, .separator, #register-box{
+    text-align: center;
+    /* background-color: #793939;
+    border: 1px solid #fff; */
+    width: 800px;
+    margin-left: 1000px;
+}
+/* paragraphs */
+
+#paragraphs{
+    display: flex;
+    flex-direction: column;
+    gap: 50px 0px;
+    line-height: 84px;
+    letter-spacing: -1.2px;
+
+}
+#login-container #paragraphs .pOne{
+    text-align: left;
+    font-weight: 700;
+    font-size: 64px;
+}
+
+#login-container #paragraphs .pTwo{
+    text-align: left;
+    font-weight: 700;
+    font-size: 31px;
+}
+
+/* Logins */
+#google-login, #apple-login{
+    background-color: #fff;
+    width: 320px;
+    height: 45px;
+    border-radius: 30px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+#google-login a {
+    text-decoration: none;
+}
+#google-login img{
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+#apple-login a{
+    text-decoration: none;
+}
+#apple-login .apple-span{
+   position: relative;
+   bottom: 4px;
+}
+#apple-login img{
+    width: 16px;
+    height: auto;
+    margin-right: 8px;
+}
+/* separator */
+
+.separator{
+    position: relative;
+}
+.line{
+    border-top: 1px solid #2f3336;
+    width: 330px;
+    margin: 25px -4px 25px;
+}
+.separator span{
+    position: absolute;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 500;
+    background-color: #000;
+    top: -6px;
+    width: 50px;
+    margin-left: -25px;
+    font-size: 14px;
+}
+
+/* Criar conta */
+#btn-register{
+    width: 320px;
+    height: 45px;
+    background-color: #0095f6;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.p-register{
+    width: 300px;
+    text-overflow: unset;
+    word-wrap: break-word;
+    line-height: 12px;
+    margin-left: 8px;
+    margin-top: 7px;
+    font-size: 11px;
+    font-weight: 400;
+    text-align: left;
+    color: #4e4f50;
+}
+.p-register a{
+    text-decoration: none;
+    color: #0095f6;
+}
+
+/*  */

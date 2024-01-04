@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./imgs/favcon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>X.O que esta acontecendo / X</title>
+</head>
+<body>
+    <main>
+        <div id="main-container">
+            <div id="banner-container">
+                <img src="./imgs/logo-white.png" alt="X logo">
+            </div>
+            <!-- principais infos -->
+            <div id="box-container">
+
+                <div id="login-container">
+                    <div id="paragraphs">
+                        <p class="pOne">Acontecendo agora</p>
+                        <p class="pTwo">inscreva-se hoje</p>
+                    </div>
+                    <!-- outros Login -->
+                    <div id="google-login">
+                        <a href="#">
+                            <img src="./imgs/google-logo.png" alt="Google login"/>
+                            <span>inscreva-se no Google</span>
+                        </a>
+                    </div>
+                    <div id="apple-login">
+                         <a href="#">
+                            <img src="./imgs/./apple-logo.png" alt="Apple Login"/>
+                            <span class="apple-span">inscreva-se com Apple</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- separacao -->
+                <div class="separator">
+                    <div class="line">
+                        <span>OU</span>
+                    </div>
+                </div>
+                <!-- Criar conta modal -->
+
+                <div id="register-box">
+                    <div class="modal-base"></div>
+                    <button onclick="toggleModalById('modal-Window')" id="btn-register">Criar conta</button>
+                    <div class="p-register">
+                        <p>Ao se inscrever, você concorda com os <a href="">Termos de Serviço</a> e a <a href="">Política de Privacidade</a>, incluindo o <a href="">Uso de Cookies</a>.</p>
+                    </div>
+                </div>
+
+                    <div class="modal" id="modal-Window">
+                        <!-- header -->
+                        <div class="modal-header">
+                            <ion-icon name="close-outline" class="btn-close" onclick="toggleModalById('modal-newsletter')"></ion-icon>
+                            <p>Etapa 1 de 5</p>
+                        </div>
+                        <form id="register-form">
+                            <div class="modal-body">
+                                <div class="register">
+                                    <p>Criar conta</p>
+                                    <div class="register-input">
+                                    <input type="text" id="username" name="username" placeholder="Nome">
+                                    <input type="email" name="mail" placeholder="E-mail">
+                                </div>
+                            </div>
+                            <!-- segunda parte -->
+                            <div class="birthday">
+                                <p class="Titulo">Data de nascimento</p>
+                                <p>Isso não será exibido publicamente. Confirme sua própria idade, mesmo se esta conta for de empresa, de um animal de estimação ou outros.</p>
+                                <div class="birthday-input">
+                                    <label for="month">Mes:</label>
+                                    <select name="month" id="month"></select>
+                                    <label for="day">Dia:</label>
+                                    <select name="day" id="day"></select>
+                                    <label for="year">Ano:</label>
+                                    <select name="year" id="year"></select>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="modal-footer">
+                            <input type="submit" value="Avancar">
+                        </div> 
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
